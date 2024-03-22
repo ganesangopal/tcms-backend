@@ -5,6 +5,7 @@
   const path = require('path');
   const { v4 } = require('uuid');
   let users = require('../models/users/users.json');
+  let plans = require('../models/plans/plans.json');
   const generateMobNum = require('../utilities/generateMobileNumber');
   exports.getUsers = () => {
     try {
@@ -12,6 +13,28 @@
         return users;
       } else {
         return [];
+      }
+    } catch(err) {
+      throw err;
+    }
+  };
+
+  exports.getUser = (options) => {
+    try {
+      if (users && users.length > 0) {
+        let user = users.find(user => user.id === options.id);
+        if (options.populate && options.populate === 'plan') {
+          let plan = plans.find(plan => plan.id === user.planId);
+          let data = {
+            user: {...user},
+            plan: {...plan}
+          }
+          return data;
+        } else {
+          return user;
+        }
+      } else {
+        return false;
       }
     } catch(err) {
       throw err;

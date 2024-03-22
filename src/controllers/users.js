@@ -10,6 +10,21 @@
     }
   };
 
+  exports.getUser = (req, res) => {
+    try {
+      let id = req.params.id;
+      let populate = req.query.populate;
+      let options = {
+        id: id,
+        populate: populate
+      }
+      let user = userService.getUser(options);
+      res.status(200).send(user);
+    } catch(err) {
+      res.status(500).send({message: 'Something went wrong'});
+    }
+  };
+
   exports.updateUser = (req, res) => {
     try {
       let userId = req.params.id;

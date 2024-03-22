@@ -9,6 +9,7 @@
   router.route('/create')
     .post(validator, users.createUser);
   router.route('/:id')
-    .put(users.updateUser);
+    .put(users.updateUser)
+    .get(users.getUser);
   module.exports = router;
 }())
