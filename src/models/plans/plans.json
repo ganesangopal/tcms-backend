@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Platinum365",
+    "cost": 499,
+    "validity": 365,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Gold180",
+    "cost": 299,
+    "validity": 180,
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Silver90",
+    "cost": 199,
+    "validity": 90,
+    "status": "active"
+  }
+]

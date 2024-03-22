@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ganesan",
+    "dob": "1992/05/06",
+    "email": "test@example.com",
+    "aadhaarNumber": "123456789012",
+    "id": "132bfbef-7859-4aee-a26f-ed7c03cd9f43",
+    "registeredDate": "2024-03-21T21:49:37.403Z",
+    "assignedMobileNumber": "+919940243584",
+    "planId": 2
+  },
+  {
+    "name": "Ravi",
+    "dob": "1995-08-05",
+    "email": "test2@example.com",
+    "aadhaarNumber": "123456789012",
+    "id": "d4d1137a-94b6-4760-ae3f-4d360d8fe5a2",
+    "registeredDate": "2024-03-22T05:27:46.131Z",
+    "assignedMobileNumber": "+919940156814",
+    "planId": 3
+  },
+  {
+    "name": "Ramu",
+    "dob": "1998-03-13",
+    "email": "test5@example.com",
+    "aadhaarNumber": "123456789012",
+    "id": "33e9805b-b7f9-4bc5-82ba-8ba92eeacc2a",
+    "registeredDate": "2024-03-22T05:34:36.038Z",
+    "assignedMobileNumber": "+919940646134",
+    "planId": 2
+  }
+]
